@@ -10,9 +10,21 @@ const linea = (n, char) => {
     return linea;
 }
 
-let arr = [6,5,4,3];
+let arr = [6,5,4,3,2,1];
 arr.map(n => {
     let l = linea(n, '*');
     console.log(l);
 });
 
+
+let arr = [1,3,5, 7,9];
+arr.map(n => {
+    let l = linea(n, '*');
+    console.log(l);
+});
+
+let arr = [1,3,5, 7,9,7,5,3,1];
+arr.map(n => {
+    let l = linea(n, '*');
+    console.log(l);
+});

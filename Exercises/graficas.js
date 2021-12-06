@@ -9,22 +9,23 @@ const linea = (n, char) => {
     }
     return linea;
 }
-
-let arr = [6,5,4,3,2,1];
-arr.map(n => {
+console.log("Grafica A: ");
+let arr1 = [6,5,4,3,2,1];
+arr1.map(n => {
     let l = linea(n, '*');
     console.log(l);
 });
 
-
-let arr = [1,3,5, 7,9];
-arr.map(n => {
+console.log("Grafica B: ");
+let arr2 = [1,3,5, 7,9];
+arr2.map(n => {
     let l = linea(n, '*');
     console.log(l);
 });
 
-let arr = [1,3,5, 7,9,7,5,3,1];
-arr.map(n => {
+console.log("Grafica C: ");
+let arr3 = [1,3,5, 7,9,7,5,3,1];
+arr3.map(n => {
     let l = linea(n, '*');
     console.log(l);
 });

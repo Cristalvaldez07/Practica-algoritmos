@@ -6,3 +6,5 @@ var eqcuad = function(a, b, c) {
     let y = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
     return x;
 }
+
+console.log(eqcuad(1, -5, 6));

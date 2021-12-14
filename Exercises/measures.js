@@ -2,11 +2,23 @@
 consola la misma longitud en yardas, pies y pulgadas. Por ejemplo, una longitud de 65 
  pulgadas sería expresada como: 1 yarda, 2 pies y 5 pulgadas. */
 
-var pulgadas = 65;
-var yardas = pulgadas / 36;
-var pies = pulgadas / 12;
-var pulgadas = pulgadas % 12;
-console.log(yardas);
-console.log(pies);
-console.log(pulgadas);
+ const input = 12;
 
+ const YARDS = 36;
+ const PIES = 12;
+ 
+ // Division Modulo Math.floor 
+ 
+ const yardas = Math.floor(input / YARDS);
+ 
+ // 1.8 -> 1 
+ const resto_yardas = input % YARDS;
+ 
+ const pies = Math.floor(resto_yardas / PIES);
+ const resto_pies = resto_yardas % PIES;
+ 
+ 
+ console.log(`Yardas ${yardas} Pies ${pies} Pulgadas ${resto_pies} `);
+ 
+ 
+ 
